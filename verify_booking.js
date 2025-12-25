@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-const BASE_URL = 'http://localhost:5001/api';
+const BASE_URL = 'http://localhost:5002/api';
 
 async function testBooking() {
     try {

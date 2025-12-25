@@ -37,6 +37,15 @@ New routes to handle booking logic.
 - `DELETE /api/bookings/:id`
     - Cancel a booking (only if owned by user).
 
+### PhonePe Configuration
+Add the following to your `.env` file:
+```env
+PHONEPE_CLIENT_ID=your_merchant_id
+PHONEPE_CLIENT_SECRET=your_salt_key
+PHONEPE_CLIENT_VERSION=1
+PHONEPE_HOST_URL=https://api-preprod.phonepe.com/apis/pg-sandbox
+```
+
 ### Component Architecture (Conceptual Frontend)
 If we were to implement a frontend, these would be the key components:
 

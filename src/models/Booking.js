@@ -18,6 +18,19 @@ const bookingSchema = new mongoose.Schema({
         type: Number, // Duration in minutes
         required: true
     },
+    status: {
+        type: String,
+        enum: ['PENDING', 'CONFIRMED', 'CANCELLED'],
+        default: 'PENDING'
+    },
+    transactionId: {
+        type: String,
+        unique: true,
+        sparse: true
+    },
+    amount: {
+        type: Number
+    },
     createdAt: {
         type: Date,
         default: Date.now

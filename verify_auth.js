@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-const BASE_URL = 'http://localhost:5001/api/auth';
+const BASE_URL = 'http://localhost:5002/api/auth';
 
 async function testAuth() {
     try {
